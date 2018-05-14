@@ -18,8 +18,6 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -32,12 +30,24 @@ ol, ul {
   width: 34px;
 }
 
-.square:focus {
+.revealedSquare{
+  background: #087a02;
   outline: none;
 }
 
-.kbd-navigation .square:focus {
-  background: #ddd;
+.hiddenSquare {
+  background: #fff;
+  outline: none;
+}
+
+.markedSquare {
+  background: #F7391B;
+  outline: none;
+}
+
+.gameLost {
+  background: #F7391B;
+  outline: none;
 }
 
 .game {
@@ -49,3 +59,7 @@ ol, ul {
   margin-left: 20px;
 }
 
+.game-footer {
+  margin-top: 30;
+  flex-direction: row;
+}
